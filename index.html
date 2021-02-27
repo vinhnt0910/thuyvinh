@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thuy Vinh Computer</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -18,27 +20,32 @@
       };
 
       (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Your Chat Plugin code
     <button class="fb-customerchat"
     attribution="setup_tool"
     page_id="102167945262445">TV</button> -->
-    <!-- <div class="fb-customerchat"
+    <div id="shop"
       attribution="setup_tool"
       page_id="102167945262445">
-    </div> -->
+    </div>
     <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
+    <div id="social"
     attribution="setup_tool"
     page_id="107507041389912">
     </div>
+
     <h1>Chào mừng bạn đến với Thúy Vinh Computer</h1>
     <p>Chúng tôi chuyên cung cấp các laptop cao cấp nhập Mỹ</p>
+
+    <button onclick="shopFunction()">Chat Shop</button>
+    <button onclick="socialFunction()">Chat Social</button>
 </body>
 </html>
